@@ -1,4 +1,4 @@
-#POW Server & Client
+# POW Server & Client
 The implementation of the “Word of Wisdom” tcp server and client with DDOS attacks protection
 * TCP server is protected from DDOS attacks with the Prof of Work ( https://en.wikipedia.org/wiki/Proof_of_work ) concept
 * The Hashcash ( https://en.wikipedia.org/wiki/Hashcash ) is used as the PoW algorithm, because it is the most popular challenge-response algorithm for preventing DDOS attacks
@@ -6,7 +6,9 @@ The implementation of the “Word of Wisdom” tcp server and client with DDOS a
 
 ## Install & Run
 ```
-docker-compose up -d
+make docker_build
+make docker_run
+make docker_stop
 ```
 or
 * setup env variables
