@@ -1,0 +1,17 @@
+version: '2'
+services:
+  server:
+    image: pow_server
+    container_name: pow_server
+    restart: always
+    env_file: config/.env
+    ports:
+      - "8081:8081"
+
+  client:
+    image: pow_client
+    container_name: pow_client
+    restart: always
+    env_file: config/.env
+    links:
+      - server:server
