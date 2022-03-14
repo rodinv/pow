@@ -9,7 +9,6 @@ RUN go build -o server cmd/server/main.go
 
 FROM alpine:3.12.0 AS launcher
 
-RUN apk --no-cache add ca-certificates
 WORKDIR /
 COPY --from=builder /app/server .
 

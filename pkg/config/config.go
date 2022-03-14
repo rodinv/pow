@@ -2,7 +2,6 @@ package config
 
 import (
 	"github.com/ilyakaznacheev/cleanenv"
-	_ "github.com/ilyakaznacheev/cleanenv"
 )
 
 // Server is a server config
